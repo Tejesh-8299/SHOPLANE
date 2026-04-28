@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Bags",
+        "price": 999,
+        "category": "Fashion",
+        "image": "/images/bags.jpg" 
+     },
+     {
+        "id": 2, 
+        "name": "Camera",
+        "price": 9999,
+        "category": "Electronics",
+        "image": "/images/cam 1.jpg"
+     },
+     {
+        "id": 3,
+        "name": "Shirts",
+        "price": 499,
+        "category": "Fashion",     
+        "image" : "/images/checkshirt.jpg"
+     },
+     {
+        "id": 4,
+        "name": "Shoes",
+        "price": 1999,
+        "category": "footwear",
+        "image": "/images/shoes.jpg"
+     },
+     {
+        "id": 5,
+        "name": "Watches",
+        "price": 2999,
+        "category": "Fashion",
+        "image": "/images/watch.jpg"
+     },
+     {
+        "id": 6,
+        "name": "Headphones",
+        "price": 1999,
+        "category": "Electronics",
+        "image": "/images/headset.jpg"
+     },
+     {
+        "id": 7,
+        "name": "Laptops",
+        "price": 49999,
+        "category": "Electronics",
+        "image": "/images/laptop.jpg"
+     },
+     {
+        "id": 8,
+        "name": "Smartphones",
+        "price": 19999,
+        "category": "Electronics",
+        "image": "/images/mobile1.jpg"
+     },
+     {
+        "id": 9,
+        "name": "Tablets",
+        "price": 14999,
+        "category": "Electronics",
+        "image": "/images/tab 1.jpg"
+     },
+     {
+        "id": 10,
+        "name": "sun glasses",
+        "price": 299,
+        "category": "accessories",
+        "image": "/images/glasses1.jpg"
+     },
+     {
+        "id": 11,
+        "name": "jeans",
+        "price": 499,
+        "category": "Fashion",
+        "image": "/images/jeans.avif"
+     },
+     {
+        "id": 12,
+        "name": "Denim jackets",
+        "price": 9999,
+        "category": "Fashion",
+        "image": "/images/denim jacket.jpg"
+     }
+]
