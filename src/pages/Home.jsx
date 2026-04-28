@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import products from "../data/products.json";
 import "./Home.css";
 
 function Home() {
+  const navigate = useNavigate();
   // 🔹 States
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
@@ -41,7 +43,9 @@ function Home() {
       {/* 🔹 Navbar */}
       <div className="navbar">
         <h2 className="logo">ShopLane</h2>
-        <button className="cart-btn">Cart</button>
+        <button className="cart-btn" onClick={() => navigate("/cart")}>
+          Cart
+        </button>
       </div>
 
       {/* 🔹 Hero + Search */}
@@ -89,7 +93,11 @@ function Home() {
       <div className="grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
-            <div className="card" key={product.id}>
+            <div
+              className="card"
+              key={product.id}
+              onClick={() => navigate(`/product/${product.id}`)}
+            >
               <img
                 src={product.image}
                 alt={product.name}

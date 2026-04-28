@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import products from "../data/products.json";
 import "./ProductDetails.css";
-import { useCart } from "../context/CartContext"; 
+import { useCart } from "../context/useCart";
 
 
 function ProductDetails() {
@@ -21,6 +21,7 @@ function ProductDetails() {
   if (!product) return <h2>Product Not Found</h2>;
 
   const handleAddToCart = () => {
+    addToCart(product, qty);
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
   };
