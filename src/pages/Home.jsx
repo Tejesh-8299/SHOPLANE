@@ -1,15 +1,22 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import products from "../data/products.json";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate();
   // 🔹 States
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [price, setPrice] = useState("All");
   const [sort, setSort] = useState("");
+
+
+  const navigate = useNavigate();
+  <button className="cart-btn" onClick={() => navigate("/cart")}>
+    Cart
+  </button>
+  
+ 
 
   // 🔹 Filter Logic
   const filteredProducts = products
@@ -43,9 +50,7 @@ function Home() {
       {/* 🔹 Navbar */}
       <div className="navbar">
         <h2 className="logo">ShopLane</h2>
-        <button className="cart-btn" onClick={() => navigate("/cart")}>
-          Cart
-        </button>
+        <button className="cart-btn">Cart</button>
       </div>
 
       {/* 🔹 Hero + Search */}
@@ -93,11 +98,7 @@ function Home() {
       <div className="grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
-            <div
-              className="card"
-              key={product.id}
-              onClick={() => navigate(`/product/${product.id}`)}
-            >
+            <div className="card" key={product.id}>
               <img
                 src={product.image}
                 alt={product.name}
