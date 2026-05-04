@@ -3,6 +3,7 @@ import products from "../data/products.json";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
+
 function Home() {
   // 🔹 States
   const [search, setSearch] = useState("");
@@ -15,8 +16,6 @@ function Home() {
   <button className="cart-btn" onClick={() => navigate("/cart")}>
     Cart
   </button>
-  
- 
 
   // 🔹 Filter Logic
   const filteredProducts = products
