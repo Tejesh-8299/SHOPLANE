@@ -13,7 +13,7 @@ function ProductDetails() {
 
     const product = products.find(p => p.id === Number(id));
 
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] = useState(0);
   const [added, setAdded] = useState(false);
 
 
