@@ -3,8 +3,7 @@ import { CartProvider } from "./context/CartContext";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
-
+import Checkout from "./pages/Checkout";  
 function App() {
   return (
     <CartProvider>

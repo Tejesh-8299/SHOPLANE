@@ -13,9 +13,6 @@ function Home() {
 
 
   const navigate = useNavigate();
-  <button className="cart-btn" onClick={() => navigate("/cart")}>
-    Cart
-  </button>
 
   // 🔹 Filter Logic
   const filteredProducts = products
@@ -49,7 +46,9 @@ function Home() {
       {/* 🔹 Navbar */}
       <div className="navbar">
         <h2 className="logo">ShopLane</h2>
-        <button className="cart-btn">Cart</button>
+         <button className="cart-btn" onClick={() => navigate("/cart")}>
+          Cart
+        </button>
       </div>
 
       {/* 🔹 Hero + Search */}
